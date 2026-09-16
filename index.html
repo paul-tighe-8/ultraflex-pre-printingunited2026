@@ -212,6 +212,22 @@ form.gone{display:none}
 
 .crm-form-host .uf-pick{margin:5px 0 0;font:700 12.5px/1.4 var(--font-body);color:#B03A2E}
 .crm-form-host select:invalid{color:var(--muted)}
+
+.band .band-lead{font:700 1.2rem/1.35 var(--font-head);color:var(--accent-ink);margin-top:12px}
+.band a.fn{color:inherit;text-decoration:none;font-weight:700}
+.band .prize-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:28px 0 0;text-align:left}
+.band .prize{background:#fff;border-radius:6px;padding:20px 22px;box-shadow:0 3px 0 #A88B00}
+.band .prize b{display:block;font:700 34px/1.05 var(--font-head);color:var(--dark);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.band .prize h3{font-size:1.02rem;margin:6px 0 0;color:var(--blue)}
+.band .prize p{margin:8px 0 0;font-size:15px;line-height:1.55;max-width:none;color:var(--body)}
+.band .prize-how{background:rgba(255,255,255,.45);border-radius:6px;padding:18px 22px;margin:16px 0 0;text-align:left}
+.band .prize-how h3{font:700 11.5px/1.3 var(--font-body);letter-spacing:.16em;color:#5C4A00;margin:0}
+.band .prize-how p{margin:8px 0 0;font-size:15px;max-width:none}
+.band .fine{font-size:12.5px;margin-top:18px;color:#5C4A00}
+.form-card .fh p.fh-steps span{display:block}
+@media(max-width:600px){
+  .band .prize-grid{grid-template-columns:1fr;gap:12px}
+}
 </style>
 </head>
 <body>
@@ -228,7 +244,7 @@ form.gone{display:none}
     <p class="lede">Booth C2461, Central Hall, at the Las Vegas Convention Center.</p>
     <ul class="ticks">
       <li>We are exhibiting, September 23 to 25</li>
-      <li>We are giving away <strong>$12,500 in material credit</strong>: $5,000 banner side, $7,500 fabric side</li>
+      <li>We're giving away <strong>$12,500 in material credit</strong>: a $5,000 Banner + Other Media Credit and a $7,500 Fabric Credit.</li>
       <li>Enter below and book a call with the team on the day</li>
     </ul>
     <dl class="hero-proof">
@@ -248,13 +264,13 @@ form.gone{display:none}
 <section><div class="wrap">
   <div class="section-head">
     <h2>What's on display at Booth C2461</h2>
-    <p>A range of applications to walk through, built into finished environments rather than shown flat on a table.</p>
+    <p>A range of applications to walk through and experience in a complete, installed environment.</p>
   </div>
   <ul class="handle-list">
     <li><strong>Wallcoverings</strong> in finished interior environments</li>
     <li><strong>Flooring</strong>: vinyl flooring, floor graphics and carpet</li>
     <li><strong>Magnetic Receptive</strong>: Signetics&reg; magnetic receptive media</li>
-    <li><strong>Sustainable Options</strong>: PVC-free and phthalate-free banner, plus GRS-certified recycled yarns on the fabric side</li>
+    <li><strong>Sustainable Options</strong>: PVC-free and phthalate-free banner, plus GRS-certified recycled yarns textiles</li>
     <li><strong>Soft Signage</strong>: VorTex&trade; fabrics printed via dye-sub and latex for display, blockout, and backlit</li>
     <li><strong>Specialty Materials</strong>: window-perf, upholstery media, underwater graphics, and more</li>
     <li><strong>New and Featured Products</strong> to compare side by side</li>
@@ -263,14 +279,21 @@ form.gone{display:none}
 
 <div class="band" id="credit"><div class="wrap">
   <p class="eyebrow">Booth C2461 &middot; Central Hall</p>
-  <h2>Interested in entering for material credit?</h2>
-  <p>We are putting <strong>$12,500 in material credit</strong> on the table at PRINTING United. Two awards, one on each side of the range, applied as a credit toward your next material order.</p>
-  <p style="margin:12px auto 0;font-size:15px;color:#4A3B00">Entering also puts a time with the team at C2461 in your diary, if you want one.</p>
-  <div class="band-figs">
-    <a href="#entry"><b>$5,000</b><span>Banner side</span></a>
-    <a href="#entry"><b>$7,500</b><span>Fabric side</span></a>
+  <h2>ENTER TO WIN MATERIAL CREDIT</h2>
+  <p class="band-lead">Two winners. $12,500 in material credit.</p>
+  <p>We&rsquo;re awarding two material credits following PRINTING United Expo to use on your next material order: $5,000 toward Banner + Other Media and $7,500 toward Fabric. Enter below for your chance to win and, if you&rsquo;re attending the show, you&rsquo;ll also have the option to book time with our team at Booth C2461.</p>
+  <div class="prize-grid">
+    <div class="prize"><b>$5,000</b><h3>Banner+ Credit</h3>
+      <p>Explore banner, blockout, mesh, flooring, wallcovering, window perf, PVC-free substrates, specialty media, and more.</p></div>
+    <div class="prize"><b>$7,500</b><h3>Fabric Credit</h3>
+      <p>Explore VorTex&trade; dye-sublimation textiles, tension fabric, SEG, backlit fabrics, recycled textile options, and more.</p></div>
+  </div>
+  <div class="prize-how">
+    <h3>HOW WINNERS ARE SELECTED</h3>
+    <p>All eligible entries will be included in a raffle following PRINTING United Expo. Winners will be drawn on October 2, 2026. We&rsquo;ll then confirm each recipient&rsquo;s equipment, print technology, and production needs to match them with the appropriate material credit category.</p>
   </div>
   <a class="btn" href="#entry">Enter to win material credit</a>
+  
 </div></div>
 
 <section class="soft"><div class="wrap" style="max-width:720px;text-align:center">
@@ -280,12 +303,12 @@ form.gone{display:none}
 
 <section id="entry"><div class="wrap">
   <div class="section-head" style="text-align:center;margin-left:auto;margin-right:auto">
-    <h2>Enter for material credit</h2>
-    <p style="margin-left:auto;margin-right:auto">About a minute. We ask what you print on because credit is only worth having against media your equipment can run.</p>
+    <h2>ENTER TO WIN</h2>
+    <p style="margin-left:auto;margin-right:auto">Tell us about your equipment and print technology so we can connect your production capabilities with the right Ultraflex materials and applications.</p>
   </div>
   <div class="form-wrap">
     <div class="form-card" style="position:static">
-      <div class="fh"><h2>Enter for credit</h2><p>About a minute &middot; No sales call unless you ask</p></div>
+      <div class="fh"><h2>Enter for credit</h2><p class="fh-steps"><span>Step 1. Enter To Win Material Credit.</span> <span>Step 2. Option to Book an In-Booth Meeting with Sales</span></p></div>
       <div class="fb">
         
         <script
@@ -294,21 +317,6 @@ form.gone{display:none}
         ></script>
       </div>
     </div>
-  </div>
-</div></section>
-
-<section class="soft"><div class="wrap">
-  <div class="section-head">
-    <h2>Two awards, two sides of the range</h2>
-    <p>Ultraflex splits the line into the banner side, which covers everything that is not fabric, and the fabric side. There is credit on each.</p>
-  </div>
-  <div class="grid3" style="max-width:900px;margin:0 auto">
-    <div class="card"><div class="ico ico-wide">$5,000</div><h3>Banner side</h3>
-      <p>Frontlit, blockout and mesh banner. Vinyl flooring, floor graphics and carpet. Printable wallcovering. Window perf and other specialty media. Sustainable substrates: PVC-free banner, mesh or fabric.</p></div>
-    <div class="card"><div class="ico ico-wide">$7,500</div><h3>Fabric side</h3>
-      <p>VorTex&trade; dye-sublimation textiles, tension fabric and SEG. Backlit fabric. GRS-certified recycled yarns.</p></div>
-    <div class="card"><div class="ico">&rarr;</div><h3>How it is decided</h3>
-      <p>Entries are reviewed after the show and recipients are selected by Ultraflex. Credit is only worth having against media your equipment can actually run.</p></div>
   </div>
 </div></section>
 
