@@ -299,7 +299,9 @@ form.gone{display:none}
 
 (function(){
   var choice = null;
-  try{
+  var q = (location.search.match(/[?&]meeting=(yes|no)\b/i) || [])[1];
+  if(q) choice = q.toLowerCase();
+  if(!q) try{
     var raw = localStorage.getItem("ufPu26Meeting");
     if(raw){
       var o = JSON.parse(raw);
