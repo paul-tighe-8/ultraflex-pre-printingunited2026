@@ -528,6 +528,35 @@ form.gone{display:none}
     return out;
   }
 
+  var MEET_KEY = "ufPu26Meeting";
+  try{ localStorage.removeItem(MEET_KEY); }catch(e){}
+  function labelFor(sel){
+    var p = sel.parentElement;
+    for(var i=0;i<5 && p;i++){
+      var l = p.querySelector("label");
+      if(l) return (l.textContent || "").toLowerCase();
+      p = p.parentElement;
+    }
+    return "";
+  }
+  function isMeetingQ(sel){ return labelFor(sel).indexOf("in-booth meeting") > -1; }
+  function saveMeeting(sel){
+    
+    var v = (sel.value || "").trim().toLowerCase();
+    try{
+      if(!v) localStorage.removeItem(MEET_KEY);
+      else localStorage.setItem(MEET_KEY, JSON.stringify({v: v.indexOf("yes") === 0 ? "yes" : "no", t: Date.now()}));
+    }catch(e){}
+  }
+  function trackMeeting(){
+    allSelects(document).forEach(function(sel){
+      if(sel.dataset.ufMeet || !isMeetingQ(sel)) return;
+      sel.dataset.ufMeet = "1";
+      sel.addEventListener("change", function(){ saveMeeting(sel); });
+      sel.addEventListener("input",  function(){ saveMeeting(sel); });
+    });
+  }
+
   function guardSubmit(){
     if(document.documentElement.dataset.ufGuard) return;
     document.addEventListener("click", function(e){
@@ -538,6 +567,7 @@ form.gone{display:none}
         if(n && n.tagName && (n.tagName === "BUTTON" || (n.tagName === "INPUT" && n.type === "submit"))){ b = n; break; }
       }
       if(!b) return;
+      allSelects(document).forEach(function(s){ if(isMeetingQ(s)) saveMeeting(s); });
       var miss = allSelects(document).filter(function(s){
         return s.dataset.ufChoice && !(s.value || "").trim();
       });
@@ -572,6 +602,7 @@ form.gone{display:none}
       var h = document.querySelector(".crm-form-host");
       if(h) deInline(h);
       guardSubmit();
+      trackMeeting();
       allButtons(document).forEach(function(b){ relabel(b); brandButton(b); });
       allFields(document).forEach(brandField);
       var sels = allSelects(document);
