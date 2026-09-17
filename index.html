@@ -643,5 +643,54 @@ form.gone{display:none}
   };
 })();
 </script>
+<script>
+
+(function(){
+  var MEET_FIELD = "generic-dropdown-4109e270-bbf2-4852-8b2b-24e366dc4cec";
+  var TY = "https://ultraflex-pre-printingunited2026.vercel.app/thank-you.html";
+  function norm(v){ return String(v == null ? "" : v).trim().toLowerCase(); }
+  function answerFrom(body){
+    try{
+      var o = typeof body === "string" ? JSON.parse(body) : null;
+      var vals = o && o.submission && o.submission.values;
+      if(typeof vals === "string") vals = JSON.parse(vals);
+      if(vals){
+        var v = vals[MEET_FIELD];
+        if(v == null){
+          for(var k in vals){
+            var n = norm(vals[k]);
+            if(n === "yes" || n === "not right now"){ v = vals[k]; break; }
+          }
+        }
+        if(v != null && norm(v)) return norm(v).indexOf("yes") === 0 ? "yes" : "no";
+      }
+    }catch(e){}
+    try{
+      var r = JSON.parse(localStorage.getItem("ufPu26Meeting") || "null");
+      if(r && r.v) return r.v;
+    }catch(e){}
+    return "";
+  }
+  var _open = XMLHttpRequest.prototype.open, _send = XMLHttpRequest.prototype.send;
+  XMLHttpRequest.prototype.open = function(method, url){
+    this.__ufUrl = String(url || "");
+    return _open.apply(this, arguments);
+  };
+  XMLHttpRequest.prototype.send = function(body){
+    var xhr = this;
+    try{
+      if((xhr.__ufUrl || "").indexOf("CreateFormSubmission") > -1){
+        var ans = answerFrom(body);
+        xhr.addEventListener("load", function(){
+          if(xhr.status < 200 || xhr.status >= 300) return;
+          try{ localStorage.setItem("ufPu26Meeting", JSON.stringify({v: ans === "yes" ? "yes" : "no", t: Date.now()})); }catch(e){}
+          window.location.href = TY + (ans === "yes" ? "?meeting=yes" : "?meeting=no");
+        });
+      }
+    }catch(e){}
+    return _send.apply(this, arguments);
+  };
+})();
+</script>
 </body>
 </html>
