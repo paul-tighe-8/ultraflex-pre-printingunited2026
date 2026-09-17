@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thank You | Ultraflex Systems at PRINTING United 2026</title>
+<meta name="robots" content="noindex">
+<style>
+/* shared.css, inlined so this page is one paste-ready file */
+:root{
+  --blue:#086DB6; --blue-dark:#065A97; --dark:#08355A;
+  --accent:#EEC400; --accent-dark:#D4AF00; --accent-ink:#2A2200;
+  --ink:#1B2A33; --body:#45565F; --muted:#77878F;
+  --line:#E1E7EB; --bg:#FFFFFF; --bg-soft:#F4F6F8;
+  --shadow:0 6px 24px rgba(8,53,90,.09);
+  --font-head:'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif;
+  --font-body:'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:80px}  
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--body);font:16px/1.65 var(--font-body)}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--blue)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--font-head);color:var(--ink);margin:0}
+h1{font:700 clamp(2rem,4.6vw,3.1rem)/1.08 var(--font-head);letter-spacing:-.028em}
+h2{font:700 clamp(1.5rem,3.2vw,2.15rem)/1.15 var(--font-head);letter-spacing:-.022em}
+h3{font:700 1.08rem/1.35 var(--font-head);letter-spacing:-.01em}
+p{margin:0 0 14px}
+
+.site-header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:40}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.logo img{width:190px}
+.header-phone{font:700 15px/1 var(--font-head);color:var(--blue);text-decoration:none;white-space:nowrap}
+.header-phone span{display:block;font:600 10.5px/1.6 var(--font-body);letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+
+.hero{background:linear-gradient(160deg,var(--dark) 0%,var(--blue) 100%);color:#fff;padding:44px 0 54px}
+.hero-grid{display:grid;grid-template-columns:1fr 430px;gap:44px;align-items:start}
+.hero h1{color:#fff}
+.flag{display:inline-block;background:var(--accent);color:var(--accent-ink);font:700 11.5px/1 var(--font-body);
+  letter-spacing:.16em;text-transform:uppercase;padding:8px 12px;border-radius:3px;margin-bottom:16px}
+.lede{font-size:18px;line-height:1.6;color:#D6E6F3;margin:14px 0 20px;max-width:54ch}
+.ticks{list-style:none;padding:0;margin:0 0 22px}
+.ticks li{position:relative;padding-left:32px;margin-bottom:11px;color:#EAF3FA;font-size:15.5px}
+.ticks li::before{content:"";position:absolute;left:0;top:4px;width:19px;height:19px;border-radius:50%;
+  background:var(--accent)}
+.ticks li::after{content:"";position:absolute;left:6px;top:8px;width:5px;height:9px;
+  border:solid var(--accent-ink);border-width:0 2px 2px 0;transform:rotate(42deg)}
+.hero-proof{display:flex;flex-wrap:wrap;gap:0;border:1px solid rgba(255,255,255,.22);margin-top:6px}
+.hero-proof div{flex:1 1 120px;padding:12px 14px;border-right:1px solid rgba(255,255,255,.22)}
+.hero-proof div:last-child{border-right:0}
+.hero-proof dt{font:700 10px/1 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:#9FC4E6;margin-bottom:5px}
+.hero-proof dd{margin:0;font:700 15px/1.3 var(--font-head);color:#fff;font-variant-numeric:tabular-nums}
+
+.form-card{background:#fff;border-radius:6px;box-shadow:var(--shadow);overflow:hidden;position:sticky;top:86px}
+.form-card .fh{background:var(--dark);padding:18px 22px}
+.form-card .fh h2{color:#fff;font-size:1.28rem;margin:0}
+.form-card .fh p{margin:5px 0 0;font:600 11px/1.5 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:#9FC4E6}
+.form-card .fb{padding:20px 22px 24px;color:var(--ink)}  
+.fld{margin-bottom:13px}
+.fld label{display:block;font:700 12px/1.5 var(--font-body);color:var(--ink);margin-bottom:5px}
+.req{color:#B4341C}
+.fld input,.fld select,.fld textarea{width:100%;padding:11px 12px;border:1px solid #C7D1D8;border-radius:4px;
+  font:16px/1.4 var(--font-body);color:var(--ink);background:#fff}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:2px solid var(--blue);outline-offset:1px;border-color:var(--blue)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.err{display:none;color:#B4341C;font-size:12.5px;margin:5px 0 0}
+.fld.bad input,.fld.bad select{border-color:#B4341C}
+.fld.bad .err{display:block}
+fieldset{border:0;padding:0;margin:0 0 13px}
+legend{font:700 12px/1.5 var(--font-body);color:var(--ink);padding:0;margin-bottom:5px}
+.chk{display:grid;grid-template-columns:20px 1fr;gap:9px;align-items:start;padding:5px 0;font-size:14px;cursor:pointer}
+.chk input{width:17px;height:17px;margin:2px 0 0;accent-color:var(--blue)}
+.btn{display:block;width:100%;border:0;background:var(--accent);color:var(--accent-ink);height:54px;
+  font:700 14px/54px var(--font-body);letter-spacing:.1em;text-transform:uppercase;border-radius:4px;cursor:pointer;text-align:center;text-decoration:none}
+.btn:hover{background:var(--accent-dark)}
+.form-note{margin:11px 0 0;font-size:12.5px;line-height:1.5;color:var(--muted);text-align:center}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+section{padding:56px 0}
+section.soft{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.section-head{max-width:66ch;margin:0 0 30px}
+.section-head p{color:var(--body);margin-top:10px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:6px;padding:22px;box-shadow:var(--shadow)}
+.card .ico{width:42px;height:42px;border-radius:4px;background:var(--blue);color:#fff;
+  font:700 17px/42px var(--font-head);text-align:center;margin-bottom:13px}
+.card p{margin:6px 0 0;font-size:14.5px;color:var(--body)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.gallery figure{margin:0}
+.gallery img{border-radius:6px;border:1px solid var(--line)}
+.gallery figcaption{margin-top:9px;font-size:13.5px;color:var(--body)}
+.gallery b{display:block;color:var(--blue);font-size:14.5px}
+.handle-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0 30px}
+.handle-list li{position:relative;padding:13px 0 13px 30px;border-bottom:1px solid var(--line);font-size:15px}
+.handle-list li::before{content:"";position:absolute;left:0;top:19px;width:11px;height:11px;background:var(--accent);border-radius:2px}
+
+.faq{border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:18px 40px 18px 0;position:relative;
+  font:700 16.5px/1.45 var(--font-head);color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:8px;top:26px;width:9px;height:9px;
+  border:solid var(--blue);border-width:0 2px 2px 0;transform:rotate(45deg);transition:transform .18s}
+.faq details[open] summary::after{transform:rotate(-135deg)}
+.faq .faq-body{padding:0 0 18px;color:var(--body);font-size:15px;max-width:74ch}
+
+.final{background:var(--dark);color:#fff;text-align:center;padding:56px 0}
+.final h2{color:#fff}
+.final p{color:#BBD6EA;max-width:58ch;margin:12px auto 24px}
+.final .btn{display:inline-block;width:auto;padding:0 44px}
+
+.site-footer{background:#fff;border-top:1px solid var(--line);padding:34px 0;text-align:center}
+.site-footer img{width:150px;margin:0 auto 14px}
+.site-footer .tag{font:700 11px/1 var(--font-body);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0 0 16px}
+.site-footer address{font-style:normal;font-size:13px;line-height:1.8;color:var(--muted)}
+
+.done{display:none}.done.on{display:block}
+form.gone{display:none}
+.tick-big{width:52px;height:52px;border-radius:50%;background:#1F7A54;color:#fff;font-size:26px;
+  display:flex;align-items:center;justify-content:center;margin:0 auto 15px}
+
+.sticky-cta{display:none}
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .form-card{position:static}
+  .sticky-cta{display:block;position:fixed;left:0;right:0;bottom:0;z-index:50;background:#fff;
+    border-top:1px solid var(--line);padding:10px 16px;box-shadow:0 -4px 16px rgba(0,0,0,.09)}
+  body{padding-bottom:78px}
+}
+@media (max-width:520px){.two{grid-template-columns:1fr}.logo img{width:150px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.hero-shot{width:100%;height:auto;border-radius:6px;display:block;box-shadow:var(--shadow)}
+.hero-single .hero-grid{grid-template-columns:1fr}
+
+.band{
+  background:var(--accent);
+  background-image:radial-gradient(120% 140% at 50% -20%, #F7D83B 0%, var(--accent) 55%, #E0B800 100%);
+  color:var(--accent-ink);padding:56px 0 60px;text-align:center;
+  border-top:4px solid var(--accent-dark);border-bottom:4px solid var(--accent-dark)}
+.band .wrap{max-width:820px}
+.band .eyebrow{font:700 11.5px/1 var(--font-body);letter-spacing:.19em;text-transform:uppercase;
+  color:#7A6200;margin:0 0 14px}
+.band h2{color:var(--accent-ink);font-size:2.05rem;line-height:1.18;margin:0}
+.band p{margin:14px auto 0;font-size:16.5px;line-height:1.6;max-width:56ch;color:#3D3100}
+.band .band-figs{display:flex;gap:16px;margin:28px 0 0;justify-content:center;flex-wrap:wrap}
+.band .band-figs a{
+  display:block;text-decoration:none;background:var(--accent-dark);color:var(--accent-ink);
+  border-radius:6px;padding:15px 26px;min-width:190px;
+  box-shadow:0 3px 0 #A88B00;transition:transform .12s ease,box-shadow .12s ease,background .12s ease}
+.band .band-figs a:hover{background:#C9A600;transform:translateY(-2px);box-shadow:0 5px 0 #A88B00}
+.band .band-figs a:active{transform:translateY(1px);box-shadow:0 2px 0 #A88B00}
+.band .band-figs b{display:block;font:700 30px/1.05 var(--font-head);font-variant-numeric:tabular-nums}
+.band .band-figs span{display:block;font:700 10.5px/1.5 var(--font-body);letter-spacing:.15em;
+  text-transform:uppercase;margin-top:5px;color:#5C4A00}
+.band .btn{width:auto;display:inline-block;padding:0 46px;margin-top:30px;
+  background:var(--dark);color:#fff;white-space:nowrap}
+.band .btn:hover{background:#06294a}
+@media(max-width:600px){
+  .band{padding:44px 0 48px}
+  .band h2{font-size:1.62rem}
+  .band .band-figs{gap:12px}
+  .band .band-figs a{min-width:0;width:100%;max-width:320px}
+  .band .btn{width:100%;max-width:320px;padding:0}
+}
+.form-wrap{max-width:620px;margin:0 auto}
+@media(max-width:820px){
+  .band .wrap{grid-template-columns:1fr}
+  .band .btn{width:100%}
+}
+
+.card .ico-wide{width:fit-content;min-width:42px;padding:0 14px;letter-spacing:-.01em}
+
+.hero-fill{display:none}
+@media(min-width:900px){
+  .hero-fill{display:block;margin-top:26px}
+  .hero-fill img{width:100%;height:auto;border-radius:6px;display:block;box-shadow:var(--shadow)}
+  .hero-fill p{margin:9px 0 0;font:600 11px/1.5 var(--font-body);letter-spacing:.12em;
+    text-transform:uppercase;color:#9FC4E6}
+}
+
+.crm-form-host,.crm-form-host > div{border:0!important;padding:0!important;
+  border-radius:0!important;background:transparent!important}
+.crm-form-host{font-family:var(--font-body);color:var(--ink)}
+.crm-form-host label{display:block;font:700 12px/1.5 var(--font-body)!important;
+  color:var(--ink)!important;margin-bottom:5px!important;text-transform:none}
+.crm-form-host input[type=text],.crm-form-host input[type=email],
+.crm-form-host input[type=tel],.crm-form-host input:not([type=submit]):not([type=checkbox]):not([type=radio]),
+.crm-form-host select,.crm-form-host textarea{
+  width:100%!important;padding:11px 12px!important;border:1px solid #C7D1D8!important;
+  border-radius:4px!important;font:16px/1.4 var(--font-body)!important;
+  color:var(--ink)!important;background:#fff!important;box-shadow:none!important;
+  margin:0 0 13px!important;height:auto!important}
+.crm-form-host input:focus,.crm-form-host select:focus,.crm-form-host textarea:focus{
+  outline:0!important;border-color:var(--blue)!important;box-shadow:0 0 0 3px rgba(8,109,182,.16)!important}
+.crm-form-host textarea{min-height:88px!important;resize:vertical}
+.crm-form-host button,.crm-form-host input[type=submit],
+.crm-form-host button[type=submit]{
+  width:100%!important;border:0!important;background:var(--accent)!important;
+  color:var(--accent-ink)!important;height:54px!important;
+  font:700 15px/1 var(--font-body)!important;letter-spacing:.02em!important;
+  border-radius:5px!important;cursor:pointer;margin-top:4px!important;
+  text-transform:none!important;opacity:1!important}
+.crm-form-host button:hover,.crm-form-host input[type=submit]:hover,
+.crm-form-host button[type=submit]:hover{background:var(--accent-dark)!important}
+@media(min-width:560px){
+  .crm-form-host .uf-two{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+}
+
+.crm-form-host .uf-pick{margin:5px 0 0;font:700 12.5px/1.4 var(--font-body);color:#B03A2E}
+.crm-form-host select:invalid{color:var(--muted)}
+
+.band .band-lead{font:700 1.2rem/1.35 var(--font-head);color:var(--accent-ink);margin-top:12px}
+.band a.fn{color:inherit;text-decoration:none;font-weight:700}
+.band .prize-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:28px 0 0;text-align:left}
+.band .prize{background:#fff;border-radius:6px;padding:20px 22px;box-shadow:0 3px 0 #A88B00}
+.band .prize b{display:block;font:700 34px/1.05 var(--font-head);color:var(--dark);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.band .prize h3{font-size:1.02rem;margin:6px 0 0;color:var(--blue)}
+.band .prize p{margin:8px 0 0;font-size:15px;line-height:1.55;max-width:none;color:var(--body)}
+.band .prize-how{background:rgba(255,255,255,.45);border-radius:6px;padding:18px 22px;margin:16px 0 0;text-align:left}
+.band .prize-how h3{font:700 11.5px/1.3 var(--font-body);letter-spacing:.16em;color:#5C4A00;margin:0}
+.band .prize-how p{margin:8px 0 0;font-size:15px;max-width:none}
+.band .fine{font-size:12.5px;margin-top:18px;color:#5C4A00}
+.form-card .fh p.fh-steps span{display:block}
+@media(max-width:600px){
+  .band .prize-grid{grid-template-columns:1fr;gap:12px}
+}
+</style>
+<style>
+.ty{background:var(--dark);color:#fff;text-align:center;padding:64px 0 60px}
+.ty .flag{display:inline-block}
+.ty h1{color:#fff;font-size:clamp(2rem,5vw,2.9rem);line-height:1.1;letter-spacing:-.025em;margin:18px 0 0}
+.ty .lede{color:#BBD6EA;font-size:18px;line-height:1.6;max-width:52ch;margin:16px auto 0}
+.ty-check{width:64px;height:64px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:flex;align-items:center;justify-content:center;margin:0 auto;font:700 34px/1 var(--font-head)}
+.ty-next{max-width:900px;margin:0 auto}
+.ty-next .card .ico{font-size:15px}
+.ty .btn{display:inline-block;width:auto;padding:0 40px;margin-top:26px}
+.ty .ty-note{font-size:14px;color:#9FC4E6;margin:14px auto 0}
+.ty .ty-alt{font-size:15px;color:#BBD6EA;margin:22px auto 0;max-width:52ch}
+.ty .ty-alt a{color:#EEC400;font-weight:700}
+[hidden]{display:none!important}
+@media(max-width:600px){.ty{padding:48px 0 44px}.ty .lede{font-size:16.5px}}
+</style>
+</head>
+<body>
+
+<header class="site-header"><div class="wrap header-inner">
+  <span class="logo"><img src="https://www.ultraflexx.com/wp-content/uploads/2024/05/Logo.png" alt="Ultraflex Systems"></span>
+  <a class="header-phone" href="tel:+19736278608"><span>Call today</span>(973) 627-8608</a>
+</div></header>
+
+<section class="ty"><div class="wrap">
+  <div class="ty-check" aria-hidden="true">&#10003;</div>
+  <h1>Thank you for your entry!</h1>
+  <p class="lede">You&rsquo;re entered to win material credit. Winners will be drawn on October 9, 2026 and notified by email.</p>
+
+  <div id="ty-yes" hidden>
+    <p class="ty-alt" style="color:#fff">Next, book your in-booth meeting with our team at PRINTING United Expo.</p>
+    <a class="btn" id="ty-book" href="https://outlook.office.com/book/UltraflexSystemsIncPrintingUnitedMeetings@ultraflexx.com/">Book your in-booth meeting</a>
+    <p class="ty-note" id="ty-count">Taking you to the booking page in a few seconds&hellip;</p>
+  </div>
+
+  <p class="ty-alt" id="ty-no">If you&rsquo;d like to schedule an in-booth meeting with our team at PRINTING United Expo, <a href="https://outlook.office.com/book/UltraflexSystemsIncPrintingUnitedMeetings@ultraflexx.com/">please use the booking link</a>.</p>
+</div></section>
+
+<section><div class="wrap">
+  <div class="section-head" style="text-align:center;margin-left:auto;margin-right:auto"><h2>What happens next</h2></div>
+  <div class="grid3 ty-next">
+    <div class="card"><div class="ico">01</div><h3>Winners drawn October 9, 2026</h3>
+      <p>Two winners will be drawn and notified by email using the contact information provided with their entry.</p></div>
+    <div class="card"><div class="ico">02</div><h3>Your sales rep has your details</h3>
+      <p>Your entry has gone to the Ultraflex sales rep who covers your region.</p></div>
+    <div class="card"><div class="ico">03</div><h3>Visit us at Booth C2461</h3>
+      <p>Central Hall, Las Vegas Convention Center. Wed 9&ndash;5, Thu 9&ndash;5, Fri 9&ndash;3.</p></div>
+  </div>
+</div></section>
+
+<div class="final"><div class="wrap">
+  <h2>Booth C2461 &middot; Central Hall</h2>
+  <p>PRINTING United Expo, September 23&ndash;25, 2026 at the Las Vegas Convention Center.</p>
+  <a class="btn" href="https://ultraflex-pre-printingunited2026.vercel.app/">Back to the main page</a>
+</div></div>
+
+<footer class="site-footer"><div class="wrap">
+  <img src="https://www.ultraflexx.com/wp-content/uploads/2024/05/Logo.png" alt="Ultraflex Systems">
+  <p class="tag">Reliable. Consistent. Compliant.</p>
+  <address>
+    Ultraflex Systems, Inc. &middot; 6333 Pelican Creek Circle, Riverview, FL 33578<br>
+    1578 Sussex Turnpike, Building 4, Randolph, NJ 07869<br>
+    (973) 627-8608 &middot; sales@ultraflexx.com<br>
+    &copy; 2026 Ultraflex Systems, Inc.
+  </address>
+</div></footer>
+
+<script>
+
+(function(){
+  var choice = null;
+  try{
+    var raw = localStorage.getItem("ufPu26Meeting");
+    if(raw){
+      var o = JSON.parse(raw);
+      if(o && o.t && (Date.now() - o.t) < 2*60*60*1000) choice = o.v;
+    }
+  }catch(e){}
+  if(choice !== "yes") return;
+  document.getElementById("ty-no").hidden = true;
+  document.getElementById("ty-yes").hidden = false;
+  var url = document.getElementById("ty-book").href;
+  setTimeout(function(){ window.location.href = url; }, 4000);
+})();
+</script>
+</body>
+</html>
